@@ -10,6 +10,11 @@ class Contact extends Model
     protected $guarded = [];
     protected $dates = ['birthday'];
 
+    public function path()
+    {
+        return '/contacts' . $this->id;
+    }
+
     public function setBirthdayAttribute($birthday)
     {
         $this->attributes['birthday'] = Carbon::parse($birthday);
