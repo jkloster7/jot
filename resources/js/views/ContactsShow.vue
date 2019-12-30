@@ -34,8 +34,8 @@
 </template>
 
 <script>
+import UserCircle from '../components/UserCircle';
 export default {
-    import UserCircle from '../components/UserCircle';
     name: "ContactsShow",
     components: {
         UserCircle
